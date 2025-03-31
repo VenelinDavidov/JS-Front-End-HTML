@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.post-header h1,
+.comments h2,
+.comment-form h2 {
+    color: #333;
+}
+
+.post-header p,
+.comment header {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-content {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

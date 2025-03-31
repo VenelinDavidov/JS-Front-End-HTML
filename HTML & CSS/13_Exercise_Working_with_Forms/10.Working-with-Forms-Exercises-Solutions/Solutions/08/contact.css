@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, select, button {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background: #eee;
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+form {
+    width: 60ch;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 2em 2.5em;
+    box-shadow: 0 0 0.5em 0 rgb(0,0,0,0.1);
+}
+
+fieldset {
+    padding: 1em 2em 2em 2em;
+    border: 2px solid #DDD;
+    border-radius: 0.3em;
+    margin-bottom: 2em;
+}
+
+fieldset legend {
+    padding: 0 1em;
+    margin-left: -1em;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.8em 0;
+    outline: none;
+
+    &::placeholder {
+        color: transparent;
+    }
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border-bottom: 2px solid #DDD;
+    font-size: 1.2em;
+    line-height: 1;
+    
+    &:focus {
+        border-color: orange;
+    }
+}
+
+input[type="date"] {
+    border: none;
+    border-bottom: 2px solid #DDD;
+    padding: 0.8em 0;
+    outline: none;
+    
+    &:focus {
+        border-color: orange;
+    }
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border-radius: 0.3em;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background: darkorange;
+    color: #fff;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    position: relative;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:
+        translate 0.3s ease-in-out,
+        opacity 0.3s ease-in-out
+    ;
+    opacity: 0.7;
+}
+
+.field .helper {
+    display: block;
+    font-style: italic;
+    opacity: 0.5;
+    line-height: 1;
+    padding: 0.3em 0;
+}
+
+.field:has(input:focus) label {
+    color: darkorange;
+    opacity: 1;
+}
+
+.field:has(input:placeholder-shown) label {
+    translate: 0 1.8em;
+
+}

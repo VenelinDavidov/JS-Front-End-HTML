@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, select, button {
+    font: inherit;
+}
+
+body {
+    padding:2em;
+    background: #eee;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    flex: 0 0 35em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 2em;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+}
+
+.login fieldset {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+
+.login legend {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1.5rem;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    border-radius: 0.3em;
+    border: 2px solid #ccc;
+    padding: 1em 1.5em;
+}
+
+.login input[type="submit"] {
+    border: none;
+    background: darkorange;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1rem;
+}
+
+.login .field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+}
+
+.login .field label {
+    order: -1;
+}
+
+.login input:required ~ label::after {
+    display: inline-block;
+    content: '*';
+    padding-left: 0.3em;
+    color: #C00;
+}

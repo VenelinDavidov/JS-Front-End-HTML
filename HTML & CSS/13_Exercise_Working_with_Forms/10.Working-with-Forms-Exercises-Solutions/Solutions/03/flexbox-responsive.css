@@ -1,0 +1,59 @@
+/* 
+https://css-tricks.com/four-layouts-for-the-price-of-one/
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, select, button {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background: #eee;
+}
+
+form {
+    flex: 1 1 100%;
+    max-width: 60em;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    box-shadow: 0 0 0.5em 0 rgb(0,0,0,0.1);
+}
+
+form input {
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: 0.25rem;
+    padding: 1em 1.5em;
+    margin: 0.5em;
+}
+
+form input[type="text"] {
+    flex: 1 1 10ch;
+}
+
+form input[type="email"] {
+    flex: 3 1 30ch;
+}
+
+form input[type="submit"] {
+    flex: 1 1 auto;
+    background: darkorange;
+    color: #fff;
+}

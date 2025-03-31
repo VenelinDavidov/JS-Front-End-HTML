@@ -1,0 +1,67 @@
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, button, textarea, input {
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-align: center;
+    color: #333;
+    background: #DDD;
+    border-radius: 0.3em;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+}
+
+.button + .button {
+    margin-left: 1em;
+}
+
+.button:focus,
+.button:hover {
+    color: #fff;
+    background: #000;
+}
+
+.button:active {
+    background: #060;
+}
+
+.button.primary {
+    background: orange;
+}
+
+.button.primary:hover {
+    background: darkorange;
+    color: #fff;
+}
+
+.button.secondary {
+    background: lightgoldenrodyellow;
+}
+
+.button.secondary:hover {
+    background-color: lightblue;
+    color: #333;
+}
+
+.button.outline {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.button.outline:hover {
+    background: #eee;
+    color: #333;
+}

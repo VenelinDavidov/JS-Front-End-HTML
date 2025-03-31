@@ -1,0 +1,41 @@
+html {
+    font-family: Lato, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.post {
+    border: 1px solid #CCC;
+    padding: 1.5em 2em;
+    border-radius: 0.3em;
+    color: #333;
+}
+
+.post header h2 {
+    margin-top: 0;
+}
+
+.post section p:first-child {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #111;
+}
+
+.post footer {
+    font-style: italic;
+}
+
+.post time {
+    font-weight: bold;
+}

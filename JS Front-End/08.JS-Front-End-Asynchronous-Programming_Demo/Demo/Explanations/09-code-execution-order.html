@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Clear</title>
+    <script>
+        // document.addEventListener('DOMContentLoaded', init);
+
+        // function init(e) {
+        //     console.log( document.querySelector('input') );
+
+        //     document.querySelector('input').value = '';
+        // }
+
+        console.log( document.querySelector('input') );
+
+        const input = document.querySelector('input');
+
+        document.addEventListener('click', () => {
+            document.querySelector('input').value = '';
+        });
+    </script>
+    <style>
+        body {
+            padding: 2em;
+            font-size: 30px;
+        }
+
+        input {
+            font: inherit;
+            padding: 0.5em 1em;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <input type="text" placeholder="Hi">
+
+
+
+</body>
+</html>

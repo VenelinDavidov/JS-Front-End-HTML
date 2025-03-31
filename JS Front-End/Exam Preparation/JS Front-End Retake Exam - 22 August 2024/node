@@ -1,0 +1,22 @@
+API Code
+
+    Load/Road list List of resourse
+
+     Create  single resourse
+     Read    single resourse
+     Update  single resourse
+     Delete  single resourse
+
+ DOM Code
+
+     Create Entry
+     Delete Entry
+     Update Entry = Delete Entry + Create Entry
+
+
+     Event Handlers (Манипулатори)
+
+     createHandler
+     changeHandler - go into edit mode
+     updateHandler - submit PUT request
+     deletehandler

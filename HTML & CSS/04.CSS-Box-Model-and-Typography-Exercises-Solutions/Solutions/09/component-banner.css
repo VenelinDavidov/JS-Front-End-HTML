@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.section.banner {
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #eee;
+    background-image: url(images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: max(30vh, 500px);
+    position: relative;
+}
+
+.section.banner header {
+    color: #fff;
+    font-size: 1.6em;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 0 1em #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

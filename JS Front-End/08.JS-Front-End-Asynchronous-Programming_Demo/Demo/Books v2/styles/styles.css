@@ -1,0 +1,227 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+    font-size: clamp(12px, 12px + 0.4vw, 22px);
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+}
+
+body, form, input, textarea, button, select, option, table, th, td {
+    font: inherit;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+/* Layout */
+
+body {
+    padding: 3em;
+}
+
+/* Element styling */
+
+table {
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 0.3em;
+
+    thead {
+
+        th {
+            text-align: left;
+            font-weight: bold;
+            position: relative;
+            background: #DDD;
+
+            button {
+                position: absolute;
+                top: 0.7em;
+                right: 0.7em;
+                
+                margin-left: auto;
+            }
+        }
+
+        tr:first-child {
+            th:first-child {
+                border-top-left-radius: 0.3em;
+            }
+            th:last-child {
+                border-top-right-radius: 0.3em;
+            }
+        } 
+    } 
+
+    tbody {
+        tr:last-child {
+            td:first-child {
+                border-bottom-left-radius: 0.3em;
+            }
+            td:last-child {
+                border-bottom-right-radius: 0.3em;
+            }
+        }
+
+        tr:nth-child(even) {
+            background: #F8F8F8;
+        }
+    } 
+
+    &, th, td {
+        border: 1px solid #ccc;
+    }
+
+    td, th {
+        padding: 1em 1.5em;
+    }
+
+    @media (width > 600px) {
+        tr :is(td:last-child, th:last-child) {
+            width: 13.2em;
+        }
+    }
+
+    @media (width < 600px) {
+
+        thead {
+            display: none;
+        }
+
+        &, tbody, tr, td, th {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+
+        tr {
+            padding: 0.5em;
+            margin-bottom: 2em;
+            border: 1px solid #ccc;
+            position: relative;
+
+            .actions {
+                width: 8em;
+                text-align: right;
+                position: absolute;
+                top: 0; right: 0;
+                padding: 0.5em;
+                background: none !important;
+
+                button {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+
+        tbody tr td[data-column-title]::before {
+            content: attr(data-column-title) ': ';
+            font-weight: bold;
+            display: block;
+        }
+        
+    }
+}
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 0.3em;
+    line-height: 1;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        background: #369;
+        border-color: #369;
+        color: #fff;   
+    }
+
+    & + button {
+        margin-left: 1em;
+    }
+
+    &.delete {
+        &:focus,
+        &:hover {
+            background: #C00;
+            border-color: #C00;    
+        }
+    }
+
+    &.add {
+        &:focus,
+        &:hover {
+            background: #090;
+            border-color: #090;    
+        }
+    }
+}
+
+dialog {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 30em;
+    max-height: 20em;
+    
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+
+    fieldset {
+        display: block;
+        border: none;
+    }
+
+    legend {
+        display: block;
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    button {
+        padding: 0.9em 1.5em;
+        font-weight: bold;
+    }
+}
+
+form {
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 0.5em 1em;
+        border: 1px solid #bbb;
+        border-radius: 0.3em;
+    }
+}

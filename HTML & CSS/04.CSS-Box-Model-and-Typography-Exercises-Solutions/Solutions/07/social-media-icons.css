@@ -1,0 +1,29 @@
+body {
+    padding: 2em;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.socials {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.socials li a {
+    display: block;
+    width: 3em;
+    font-size: 1.5em;
+    line-height: 3em;
+    aspect-ratio: 1/1;
+    text-align: center;
+    align-content: center;
+    background: #eee;
+    border-radius: 50%;
+    color: #000;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <title>Books</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Title
+                    <button class="add" id="create-update-book-toggle">+</button>
+                </th>
+                <th>Author</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <dialog id="create-update-book">
+        <form>
+            <fieldset>
+                <legend></legend>
+                <p>
+                    <label>Title</label>
+                    <input type="text" name="title" id="anb-title" placeholder="Title..." />
+                </p>
+                <p>
+                    <label>Author</label>
+                    <input type="text" name="author" id="anb-author" placeholder="Author..." />
+                </p>
+                <button></button>
+            </fieldset>
+        </form>
+    </dialog>
+    
+</body>
+</html>

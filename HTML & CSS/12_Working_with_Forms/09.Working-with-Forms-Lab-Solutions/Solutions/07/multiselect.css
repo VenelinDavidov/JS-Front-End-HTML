@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, textarea, select, option {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+}
+
+code {
+    display: block;
+    padding: 2em 2em 0.5em 2em;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    border: 1px solid #ccc;
+    background: #eee;
+    overflow: auto;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #CCC;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #090;
+}
+
+select {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #CCC;
+    border-radius: 0.3em;
+}
+
+select[multiple] {
+    display: block;
+    min-width: 20ch;
+    min-height: 20ch;
+}
