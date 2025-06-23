@@ -1,0 +1,200 @@
+@media  (width <= 600px) {
+
+    .home-navbar {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .home-links-container {
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .home-link,
+    .home-link1,
+    .home-link2,
+    .home-link3 {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .home-cta-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home-cta-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+
+    .home-hero {
+        flex-direction: column;
+        padding: 20px 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .home-hero-text-container {
+        width: 100%;
+        margin-left: 0;
+        order: 2;
+        align-items: center;
+    }
+
+    .home-image1 {
+        width: 100%;
+        max-width: 400px;
+        order: 1;
+        margin-bottom: 24px;
+    }
+
+    .home-heading {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .home-text02 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-cta-btn2 {
+        padding: 14px 32px;
+        font-size: 16px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+
+    .home-features {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .home-heading-container {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .home-text03 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .home-text04 {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .home-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .home-feature-card,
+    .home-feature-card1,
+    .home-feature-card2 {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .home-image2,
+    .home-image3,
+    .home-image4 {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    .home-heading1,
+    .home-heading2,
+    .home-heading3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .home-text05,
+    .home-text06,
+    .home-text07 {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .home-stats {
+        grid-template-columns: 1fr;
+        padding: 32px 16px;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .home-stat,
+    .home-stat1,
+    .home-stat2,
+    .home-stat3 {
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .home-text08,
+    .home-text13,
+    .home-text17,
+    .home-text22 {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+    }
+
+    .home-text11,
+    .home-text15,
+    .home-text20,
+    .home-text24 {
+        font-size: 1.1rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .home-text12,
+    .home-text16,
+    .home-text21,
+    .home-text25 {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-top: 8px;
+        padding: 0 8px;
+    }
+
+
+    .Section-Heading {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .Card-Heading {
+        font-size: 20px;
+    }
+
+    .Anchor {
+        font-size: 16px;
+    }
+
+
+    body {
+        font-size: 16px;
+    }
+
+    .home-container {
+        padding: 0;
+    }
+}
+
+

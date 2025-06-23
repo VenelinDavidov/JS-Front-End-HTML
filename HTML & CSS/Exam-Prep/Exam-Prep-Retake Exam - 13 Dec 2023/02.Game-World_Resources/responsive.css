@@ -1,0 +1,102 @@
+@media  (width <= 600px) {
+  .game-world-header {
+    min-height: 200px;
+  }
+
+  .tm-header-inner {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tm-header-inner,
+  .tm-welcome-section {
+    flex-direction: column;
+  }
+
+  .tm-nav-ul {
+    margin-right: 150px;
+  }
+
+  .col-md-6 img {
+    max-width: 80px;
+  }
+
+  .tm-section-title {
+    font-size: 3rem;
+  }
+
+  .tm-welcome-section h2 {
+    margin-right: 90px;
+  }
+
+  .tm-welcome-section p {
+    font-size: 1.6rem;
+  }
+
+  .tm-paging-links nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .tm-paging-link {
+    font-size: 1.75rem;
+    padding: 0.75rem 2rem;
+  }
+
+  .tm-gallery {
+    margin-left: 0px;
+  }
+
+  .tm-gallery-page {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .tm-gallery-item {
+    max-width: 100%;
+    padding-inline: 6rem;
+  }
+
+  .tm-gallery-img {
+    width: 100%;
+  }
+
+  .tm-gallery-title {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-left: 60px;
+  }
+
+  .tm-gallery-description {
+    font-size: 1.25rem;
+  }
+
+  .tm-description-figure img {
+    max-width: 80%;
+  }
+
+  .tm-mb-45 {
+    margin-left: 60px;
+    max-width: 600px;
+  }
+
+  .tm-gallery-price {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .tm-container-inner {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tm-container-inner article {
+    flex-direction: column;
+  }
+
+  .tm-description-box p,
+  .tm-description-box a,
+  footer {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,164 @@
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body {
+    font-family: 'Ubuntu';
+    margin: 0;
+}
+
+nav section,
+.left-nav h1,
+.left-nav p,
+.right-nav li {
+    display: inline-block;
+}
+
+nav h1 {
+    border-right: 3px solid rgb(219, 219, 219);
+    padding: 0px 20px;
+    color: rgb(49, 49, 49);
+    font-size: 40px;
+    margin: 30px;
+}
+
+nav p {
+    color: gray;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.active-orange {
+    text-decoration: none;
+    background:rgb(86, 219, 177);
+    padding: 20px 20px;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.gray-nav {
+    text-decoration: none;
+    background: rgb(236, 236, 236);
+    padding: 20px 20px;
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.right-nav a:hover {
+    background:rgb(86, 219, 177);
+    color: white;
+}
+
+.right-nav {
+    float: right;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.special-spacing {
+    margin-right: -3px;
+}
+
+.banner {
+    height: 482px;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.orange {
+    height: 216px;
+    background: rgb(86, 219, 177);
+}
+
+.orange p {
+    color: black;
+    text-align: center;
+    padding: 70px 140px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.gray {
+    background: rgb(53, 52, 52);
+}
+
+.icon-section {
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 100px 0px 80px 0px;
+    width: 280px;
+    color: white;
+    font-style: bold;
+}
+
+.icon-section p {
+    color: rgb(91, 89, 86);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.icon-rectangle i {
+    background: rgb(86, 219, 177);
+    padding: 20px 20px;
+}
+
+.white {
+    background: white;
+    color: rgb(64 64 64);
+    text-align: center;
+    padding: 50px;
+}
+
+.white h4 {
+    color: rgb(195, 188, 184);
+    margin-top: 3px;
+    font-weight: 200;
+}
+
+.white h1 {
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgb(95, 95, 95);
+}
+
+.green-btn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.green-btn a {
+    background: rgb(151, 77, 27);
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    background: rgb(27, 151, 114);
+    color: rgb(86, 219, 177);
+    text-align: center;
+    padding: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    letter-spacing: 2.5px;
+}
+
+footer strong {
+    color: rgb(219, 250, 240);
+}
