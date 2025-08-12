@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/css/styles.css" />
+  <title>Blood Donation Form</title>
+</head>
+
+<body>
+  <h1>Blood Donation Registration</h1>
+  <main>
+    <section id="fill-form-section">
+      <h2>Donor Information</h2>
+      <form>
+        <input type="text" id="type" placeholder="Blood Type (e.g. A+, O-)">
+        <input type="number" id="age" placeholder="Age">
+        <select name="gender" id="gender">
+          <option value="" selected disabled>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <button id="register-btn">Register as Donor</button>
+      </form>
+    </section>
+
+    <div id="donor-info">
+      <section class="wrapper">
+        <h2>Pending Donor List</h2>
+        <ul id="registered-list"></ul>
+      </section>
+      <section class="wrapper">
+        <h2>Confirmed Donors</h2>
+        <ul id="confirmed-list"></ul>
+      </section>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
